@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="es-Pe">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="../css/jquery.bxslider.css" rel="stylesheet" />
+	
+	<style>
+
+	@font-face{
+		font-family: gill;
+		src: url(../fuentes/gillsans.ttf) ;
+	}
+
+
+	li{
+		text-align: center;
+		padding-top: 1.5%;
+	}
+	#section_1{
+		background: #00DFC5;
+		text-align: center;
+	}
+
+	#limitar-ancho1{
+		padding-top: 13%;
+	}
+
+	figure{
+		display: inline-block;
+		/*margin-left: 150px;*/
+		margin-right: 0;
+		text-align: center;
+		vertical-align: top;
+		width: 25%;
+	}
+
+	#sect1-der{
+		display: inline-block;
+		text-align: left;
+		vertical-align: top;
+		/*width: 36%;*/
+
+	}
+
+	.bxslider{
+		margin-top: 100px;
+		height: auto;
+	}
+
+	.logo-derecha{
+		margin: 0;
+		padding: 0;
+		width: 211px !important;
+	}
+
+	.img-logo-der{
+		width: 100%;
+		text-align: right;
+	}
+
+	.shape {
+	    text-shadow: rgb(0, 187, 166) -1px 1px,
+	    rgb(19, 136, 113) -2px 2px,
+	    rgb(19, 136, 113) -3px 3px,
+	    rgb(19, 136, 113) -4px 4px,
+	    rgb(19, 136, 113) -5px 5px,
+	    rgb(19, 136, 113) -6px 6px,
+	    rgb(19, 136, 113) -7px 7px,
+	    rgb(19, 136, 113) -8px 8px,
+	    rgb(19, 136, 113) -9px 9px;
+	    color: white;
+	    font-family: gill;
+	}
+	
+	@media screen and (max-width: 400px) {
+		.logo-derecha{
+			display: none;
+		}
+
+		li{
+			padding-top: 0%;
+		}
+
+		figure{
+			width: 40%;
+		}
+
+	}
+	
+	@media screen and (max-width: 382px) {
+		figure{
+			margin: 0;
+			width: 62%;
+		}
+	}
+
+
+
+
+	</style>	
+	
+</head>
+<body>
+	<ul class="bxslider">
+					  <li>						
+						<div id="sect1-der">
+							<figure class="logo-derecha">
+								<img class="img-logo-der" src="../images/logoblanco.png" alt="">
+							</figure>
+							<h2 class="shape">CULTIVAMOS IDEAS</h2>
+							<p>Que nos permiten innovar<br>constantemente.</p>
+						</div>		
+						<figure>
+							<img src="../images/img1-adn.jpg" alt="">	
+						</figure>				
+					  </li>
+
+					  <li>						
+						<div id="sect1-der">
+							<figure class="logo-derecha">
+								<img class="img-logo-der" src="../images/logoblanco.png" alt="">
+							</figure>
+							<h2 class="shape">CULTIVAMOS IDEAS</h2>
+							<p>Que nos permiten innovar<br>constantemente.</p>
+						</div>						
+						<figure>
+							<img src="../images/img1-adn.jpg" alt="">	
+						</figure>
+					  </li>
+
+					  <li>						
+						<div id="sect1-der">
+							<figure class="logo-derecha">
+								<img class="img-logo-der" src="../images/logoblanco.png" alt="">
+							</figure>
+							<h2 class="shape">CULTIVAMOS IDEAS</h2>
+							<p>Que nos permiten innovar<br>constantemente.</p>
+						</div>						
+						<figure>
+							<img src="../images/img1-adn.jpg" alt="">	
+						</figure>
+					  </li>
+
+					  <li>						
+					
+								<img class="img-logo-der" src="../images/logoblanco.png" alt="">
+						
+					  </li>			
+			</ul>
+			
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+			<script src="../js/jquery.bxslider.min.js"></script>
+
+	<script>
+		$('.bxslider').bxSlider({
+			  auto: true,
+			  autoControls: false
+			});
+
+	</script>
+</body>
+</html>
