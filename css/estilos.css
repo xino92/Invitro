@@ -6,6 +6,7 @@
 html{
 	font-size: 16px;
 	height: 100%;
+	overflow-x:hidden; 
 }
 
 body{
@@ -400,7 +401,7 @@ span{
 #cont-contacto{
 	margin: 0 auto;
 	margin-top: 50px;
-	width: 900px;
+	width: 1024px;
 	text-align: center;
 }
 
@@ -411,46 +412,85 @@ span{
 	text-align: justify;
 }
 
+#contact-der{
+	display: inline-block;
+	font-size: 14px;
+	height: 180px;
+	margin: 40px 0 0 0;
+	vertical-align: top;
+	width: 380px;
+}
+
+#contact-der #num-mail
+{	
+	background: #4D4D4D;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	color: white;
+	font-size: 13px;
+	padding: 5px 0 10px 50px;
+	width: 100%;
+}
+
+#contact-der #num-mail p 
+{
+	margin: 10px;
+}
+
+#contact-der #num-mail p:nth-child(2) 
+{
+	margin-bottom: 20px;
+}
+
+#contact-sup
+{
+	display: none;
+	overflow: hidden;	
+}
+
 #section_6 form{
 	display: inline-block;
+	font-size: 14px;
 	margin: 20px 0 0 0;
 	text-align: justify;
 	vertical-align: top;
-	width: 450px;
+	width: 600px;
 }
 
 #section_6 form label{
 	display: inline-block;
-	width: 150px;
 	margin-bottom: 8px;
+	margin-right: 15px;
+	text-align: right;
+	width: 250px;
 }
 
 #section_6 form input{
 	background: #00DFC5;
 	border: none;
+	height: 28px;
 	margin-bottom: 8px;
-	width: 240px
+	text-align: center;
+	width: 310px
 }
-
-textarea{
+/*
+#section_6 form input:focus{
+	background: red;
+}
+*/
+#section_6 form textarea{
 	background: #00DFC5;
 	border: none;
-	width: 235px;
+	height: 100px;
+	text-align: center;
+	width: 305px;
 }
 
-
-#circ-der{
-	background: green;
-	border-radius: 50%;
-	display: inline-block;
-	height: 180px;
-	margin: 20px 0 0 0;
-	vertical-align: top;
-	width: 180px;
+.saltolinea
+{
+	display: block;
 }
-
-
-
 
 @media screen and (max-width: 1045px) {
 	.limitar-ancho{
@@ -548,6 +588,39 @@ textarea{
 		width: auto;
 	}
 
+	/*CONTACTO*/
+
+	#contact-der #num-mail
+	{
+		padding: 5px 0 10px 0;
+	}
+
+	#cont-contacto{
+		margin-left: 5px;
+		text-align: left;
+		width: 100%;
+	}
+
+	#cont-contacto form
+	{
+		font-size: 12px;
+		margin-right: 2%;
+		width: 60%;
+	}
+
+	#section_6 form input
+	{
+		width: 250px;	
+	}
+	#section_6 form textarea
+	{
+		width: 245px;	
+	}
+	#section_6 form label
+	{
+		width: 200px;
+	}
+
 }
 
 
@@ -593,6 +666,97 @@ textarea{
 		margin: 0;
 	}*/
 }
+
+
+@media screen and (max-width: 800px) {
+	
+	#cont-contacto form
+	{
+		text-align: center;
+		width: 90%;
+	}
+
+	#contact-der
+	{
+		display: none;
+		overflow: hidden;
+	}
+
+	#cont-contacto 
+	{
+		margin-top: 0;
+	}
+
+	
+	#contact-sup
+	{
+		display: block;
+		font-size: 14px;
+		height: 180px;
+		vertical-align: top;
+		width: 98%;
+	}
+	
+	#contact-sup #ladoi, #contact-sup #ladod
+	{
+		display: inline-block;
+		vertical-align: top;
+		width: 48%;
+	}
+
+	#contact-sup #num-mail
+	{	
+		background: #4D4D4D;
+		-webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+		color: white;
+		font-size: 13px;
+		margin: 10px 20px 10px 10px;
+		padding: 5px 0 5px 50px;
+		width: 100%;
+	}
+
+	#contact-sup #num-mail p 
+	{
+		margin: 10px;
+		width: 50%;
+	}
+
+	#contact-sup #num-mail p:nth-child(2) 
+	{
+		margin-bottom: 10px;
+	}
+
+	#contact-sup .contact-soc
+	{
+		display: inline-block;
+		text-align: center;
+		vertical-align: top;
+		width: 48%;
+	}
+	
+	#section_6 form 
+	{
+		margin: 0;
+	}	
+
+	#section_6 form label
+	{
+		width: 40%;
+	}
+
+	#section_6 form input
+	{
+		width: 50%;	
+	}
+
+	#section_6 form textarea
+	{
+		width: 49%;	
+	}
+	
+}
 	
 
 @media screen and (max-width: 656px) {
@@ -622,14 +786,7 @@ textarea{
 		width: auto;
 	}
 	
-	#section_6 form{
-		margin-left: 10%;
-		width: auto;
-	}
-
-	#section_6 form input, textarea{
-		width: 88%;
-	}
+	
 
 	#id2, #id4{
 		display: block;
@@ -645,4 +802,45 @@ textarea{
 	#section_4 article{
 		margin: 0 -5px 0 0;
 	}
+}
+
+@media screen and (max-width: 450px){
+	
+	#contact-sup #num-mail
+	{
+		margin: 10px 0;
+		width: 100%;
+	}
+
+	#contact-sup #ladoi, #contact-sup #ladod
+	{
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+
+	#section_6 form label
+	{
+		display: block;
+		text-align: left;
+		width: 100%;
+	}
+	
+	#section_6 form input
+	{
+		width: 100%;	
+	}
+
+	#section_6 form textarea
+	{
+		width: 98%;	
+	}
+
+	#cont-contacto form 
+	{
+		padding: 10px;
+	    width: 94%;
+	}
+
+
 }
