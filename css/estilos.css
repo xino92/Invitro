@@ -576,6 +576,13 @@ span{
 	display: block;
 }
 
+@media screen and (max-width: 1400px) {
+	#cont-cuadrado p{
+		margin-bottom: 30px;
+	}
+
+}
+
 @media screen and (max-width: 1045px) {
 	.limitar-ancho{
 		width: 1000px;
