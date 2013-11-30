@@ -484,7 +484,7 @@ span{
 
 #cont-contacto{
 	margin: 0 auto;
-	margin-top: 50px;
+	margin-top: 10%;
 	width: 1024px;
 	text-align: center;
 }
@@ -681,6 +681,10 @@ span{
 	}
 
 	/*CONTACTO*/
+	
+	#contact-der{
+		width: 35%;
+	}
 
 	#contact-der #num-mail
 	{
