@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link href="css/jquery.bxslider.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" media="screen" href="css/sequencejs-theme.apple-style.css" />
 	<script src="js/modernizr.js"></script>
 </head>
 
@@ -62,7 +63,46 @@
 		</header>
 
 		<section id="section_1" class="content">
-		
+				<div id="sequence-theme">
+			<div id="sequence">
+
+			
+
+				<ul class="sequence-canvas">
+					<li class="animate-in">
+						<div class="intro">
+							<h2>Built using Sequence.js</h2>
+							<h3>The Responsive Slider with Advanced CSS3 Transitions</h3>
+						</div>
+						<img class="iphone" src="images/iphone.png" alt="iPhone4" />
+						<img class="iphone-shadow" src="images/iphone-shadow.png" />
+					</li>
+
+					<li>
+						<img class="ipad" src="images/ipad.png" alt="iPad" />
+						<div class="slide2">
+							<h2>Creative Control</h2>
+							<p>Create unique sliders using CSS3 transitions</p>
+						</div>
+						<img class="ipad-shadow" src="images/ipad-shadow.png" />
+					</li>
+
+					<li>
+						<div class="slide3">
+							<h2>Cutting Edge</h2>
+							<p>Supports modern browsers, old browsers (IE7+), touch devices and responsive designs</p>
+						</div>
+						<img class="iphone2" src="images/iphone.png" alt="iPhone4" />
+						<img class="iphone2-shadow" src="images/iphone-shadow.png" />
+						<img class="iphone3" src="images/iphone.png" alt="iPhone4" />
+						<img class="iphone3-shadow" src="images/iphone-shadow.png" />
+						<img class="iphone4" src="images/iphone.png" alt="iPhone4" />
+						<img class="iphone4-shadow" src="images/iphone-shadow.png" />
+					</li>
+				</ul>
+
+			</div>
+		</div>
 		</section>
 
 		<section id="section_2" class="content" data-slide="1" data-stellar-background-ratio="0.5">
@@ -277,7 +317,7 @@
 	</section>
 	</div>
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
 	<script src="js/jquery.malihu.PageScroll2id.js"></script>
 	<script src="js/jquery.address-1.6.min.js"></script>
@@ -285,7 +325,16 @@
 	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 
+	<script>
+		 if (typeof jQuery == 'undefined'){
+		    document.write(unescape('%3Cscript src="js/jquery-min.js" %3E%3C/script%3E'));
+		 }
+		</script>
+	<script src="js/jquery.sequence-min.js"></script>
+	<script src="js/sequencejs-options.apple-style.js"></script>
+
 	 <script>
+
 
 		jQuery.noConflict();
 		(function($){
