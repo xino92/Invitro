@@ -316,7 +316,9 @@ span{
 /*****************************************************/
 
 #section_3{
-	background-image:url('../images/fondo1.jpg');
+	background-image:url('../images/fondo.jpg');
+	background-size: 100% 100%;
+	text-align: center;
 }
 
 #section_3 h2{
@@ -336,19 +338,23 @@ span{
 	font-family: gill;
 }
 
-#section_3 article{
-	background: grey;
+#section_3 figure{
+	cursor: pointer;
 	display: inline-block;
 	height: 160px;
-	vertical-align: top;
-	width: 160px;
 	margin: 8px;
+	vertical-align: top;
+	width: 131px;
 }
 
 #section_3 #cont-cuadrado{
 	margin: 0 auto;
 	margin-top: 50px;
 	width: 900px;
+}
+
+.portafolio{
+	width: 100%;
 }
 
 /*****************************************************/
