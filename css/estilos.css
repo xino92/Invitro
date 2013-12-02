@@ -485,7 +485,7 @@ span{
 
 #cont-contacto p{
 	margin: 0 auto;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	width: 600px;
 	text-align: justify;
 }
@@ -494,7 +494,7 @@ span{
 	display: inline-block;
 	font-size: 14px;
 	height: 180px;
-	margin: 40px 0 0 0;
+	margin: 20px 0 0 0;
 	vertical-align: top;
 	width: 380px;
 }
@@ -521,6 +521,14 @@ span{
 	margin-bottom: 20px;
 }
 
+#contact-der .contact-soc img, #contact-sup .contact-soc img
+{
+	margin-right: 10px;
+	vertical-align: middle;
+	width: 8%;
+}
+
+
 #contact-sup
 {
 	display: none;
@@ -536,6 +544,13 @@ span{
 	width: 600px;
 }
 
+#section_6 form .cont-btn
+{
+	margin-top: 10px;
+	text-align: right;
+	width: 75%;
+}
+
 #section_6 form label{
 	display: inline-block;
 	margin-bottom: 8px;
@@ -544,7 +559,7 @@ span{
 	width: 250px;
 }
 
-#section_6 form input{
+#section_6 form input[type="text"]{
 	background: #00DFC5;
 	border: none;
 	height: 28px;
@@ -552,8 +567,17 @@ span{
 	text-align: center;
 	width: 310px
 }
+
+#section_6 form input[type="submit"]
+{
+	background: url(../images/enviar.jpg) no-repeat;
+	background-size: 100% 100%;
+	border: none;
+	height: 60px;
+	width: 50px;
+}
 /*
-#section_6 form input:focus{
+#section_6 form input[type="text"]:focus{
 	background: red;
 }
 */
@@ -691,7 +715,15 @@ span{
 		width: 60%;
 	}
 
-	#section_6 form input
+	#section_6 form .cont-btn
+	{
+		padding-left: 15%;
+		text-align: center;
+		width: 100%;
+	}
+
+
+	#section_6 form input[type="text"]
 	{
 		width: 250px;	
 	}
@@ -819,6 +851,19 @@ span{
 		width: 48%;
 	}
 	
+	#section_6 form .cont-btn
+	{
+		margin-top: 10px;
+		text-align: center;
+		width: 100%;
+	}
+
+	#section_6 form .cont-btn input[type="submit"]
+	{
+		margin-left: 75px;
+	}
+
+
 	#section_6 form 
 	{
 		margin: 0;
@@ -829,7 +874,7 @@ span{
 		width: 40%;
 	}
 
-	#section_6 form input
+	#section_6 form input[type="text"]
 	{
 		width: 50%;	
 	}
@@ -913,7 +958,7 @@ span{
 		width: 100%;
 	}
 	
-	#section_6 form input
+	#section_6 form input[type="text"]
 	{
 		width: 100%;	
 	}
