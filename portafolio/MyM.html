@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+	<title>MyM</title>
+	<link rel="shortcut icon" href="<'../images/inv-favicon-sf.ico' >" type="image/x-icon"/>
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/estilos.css">
+	<link rel="stylesheet" href="../css/flexslider.css">	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="../js/modernizr.js"></script>
+	<script src="../js/jquery.flexslider.js"></script>
+	<script>
+		$(window).load(function() {
+		   $('.flexslider').flexslider({
+		    animation: "slide"
+		  });
+	
+
+			$('#listres').hide();
+
+			$('.btn-menu').on('click', function(){
+				$('#listres').slideToggle();	
+			}); 
+
+			$('#listres li').on('click', function(){
+				$('#listres').slideUp();	
+			});   	
+	});
+	</script>
+</head>
+
+<body>
+	<header id="navigationMenu">
+			<nav id="navigationMenuweb">
+				<figure id="cont-logo">
+					<img id="logo" src="../images/logo.svg" alt="">
+				</figure>
+				<ul id="navigationMenuWeb">
+					<li><a href="#section_1">INICIO</a></li>
+					<li><a href="#section_2">SERVICIOS</a></li>
+					<li><a href="#section_3">PORTAFOLIO</a></li>
+					<li><a href="#section_4">CLIENTES</a></li>
+					<li><a href="#section_5">NOSOTROS</a></li>
+					<li><a href="#">BLOG</a></li>
+					<li><a href="#section_6">CONTACTO</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<header id="navigationMenuResp1">
+			<nav>
+				<figure id="cont-logo">
+					<img src="../images/logo.svg" alt="">
+				</figure>
+				
+				<div id="menu-der">
+					<img class="btn-menu" src="../images/menu-smart.jpg" />
+					<ul id="listres">
+						<li><a href="#section_1">Inicio</a></li>
+						<li><a href="#section_2">Servicios</a></li>
+						<li><a href="#section_3">Portafolio</a></li>
+						<li><a href="#section_4">Clientes</a></li>
+						<li><a href="#section_5">Nosotros</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#section_6">Contacto</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+	<section class="portafolio-sect">
+		<article class="art-izq">
+				
+			<div class="flexslider">
+			  <ul class="slides">
+			    <li>
+			      <img src="../images/papeleriamm.jpg" />
+			    </li>
+			    <li>
+			      <img src="../images/logomm.jpg" />
+			    </li>	
+			    <li>
+			      <img src="../images/publicidad.jpg" />
+			    </li>			   
+			  </ul>
+			</div>				
+
+
+		</article>
+
+
+		<article class="art-der">
+			<div class="art-margen">
+				<h1>PORTAFOLIO <span>> M&M</span></h1>
+				
+				<h2>MyM Servicios de Alimentación</h2>
+				
+				<div class="abajo">
+					<p>MARCA: <br>
+					MyM Servicios de Alimentación</p>
+
+					<p>RUBRO: <br>
+					Consecionario de Alimentos</p>
+
+					<p>OBJETIVO: <br>
+					Nuestro cliente trabajaba ya con grandes marcas, nacionales y
+					trasnacionales. Sin embargo, era necesario crear, desde cero, un
+					concepto de marca y elementos sólidos de comunicación externa
+					para una tener una imagen tan profesional como la de ellos y
+					continuar con su estrategia de penetración de mercado.
+					Qué se desarrolló: Creación de marca, Publicidad Gráfica y
+					Desarrollo Web.</p>
+					
+					<p>QUÉ SE DESARROLLÓ:<br>
+					Creación de marca, Publicidad Gráfica y Desarrollo Web.</p>
+				</div>
+				<p class="port-regresar">REGRESAR A PROYECTOS</p>
+			</div>
+		</article>
+	</section>
+	
+</body>
+
+
+</html>
