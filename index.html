@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 	<title>Invitro</title>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link href="css/jquery.bxslider.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" media="screen" href="css/sequencejs-theme.apple-style.css" />
 	<script src="js/modernizr.js"></script>
@@ -16,7 +15,7 @@
 		<header id="navigationMenu">
 			<nav id="navigationMenuweb">
 				<figure id="cont-logo">
-					<img src="images/logo.svg" alt="">
+					<img id="logo" src="images/logo.svg" alt="">
 				</figure>
 				<ul id="navigationMenuWeb">
 					<li><a href="#section_1">INICIO</a></li>
@@ -28,9 +27,9 @@
 					<li><a href="#section_6">CONTACTO</a></li>
 				</ul>
 			</nav>
-			<div id="cat_icon">Menu</div>
+			<!--div id="cat_icon">Menu</div>
 			<div id="categories">
-			    <!--div CLASS="panel_title">asdasdasdasdasd</div--> <span class="panel_title">Close</span>
+			    <span class="panel_title">Close</span>
 		        <form>
 		            <label for="">a</label><input type="text">
 		            <label for="">a</label><input type="text">
@@ -38,7 +37,7 @@
 		            <label for="">a</label><input type="text">
 		            <label for="">a</label><input type="text">
 		        </form>
-			</div>
+			</div-->
 		</header>
 
 		<header id="navigationMenuResp1">
@@ -63,52 +62,64 @@
 		</header>
 
 		<section id="section_1" class="content">
-				<div id="sequence-theme">
-			<div id="sequence">
+			<div id="sect1-izq">
+				<form id="form-sect" action="">
+					<h2>¿TE GUSTARÍA UN ANÁLISIS<br>DE TU MARCA SIN COSTO?</h2>
+					<p>Envianos tus datos para coordinar una cita<br>e iniciar el cambio de tu empresa</p>
+					<input type="text" placeholder="Nombre" required><br>
+					<input type="text" placeholder="Empresa" required><br>
+					<input type="tel" placeholder="Teléfono" required><br>
+					<input type="mail" placeholder="Correo Electrónico" required><br>
 
-			
-
-				<ul class="sequence-canvas">
-					<li class="animate-in">
-						<div class="intro">
-							<h2>Built using Sequence.js</h2>
-							<h3>The Responsive Slider with Advanced CSS3 Transitions</h3>
-						</div>
-						<img class="iphone" src="images/iphone.png" alt="iPhone4" />
-						<img class="iphone-shadow" src="images/iphone-shadow.png" />
-					</li>
-
-					<li>
-						<img class="ipad" src="images/ipad.png" alt="iPad" />
-						<div class="slide2">
-							<h2>Creative Control</h2>
-							<p>Create unique sliders using CSS3 transitions</p>
-						</div>
-						<img class="ipad-shadow" src="images/ipad-shadow.png" />
-					</li>
-
-					<li>
-						<div class="slide3">
-							<h2>Cutting Edge</h2>
-							<p>Supports modern browsers, old browsers (IE7+), touch devices and responsive designs</p>
-						</div>
-						<img class="iphone2" src="images/iphone.png" alt="iPhone4" />
-						<img class="iphone2-shadow" src="images/iphone-shadow.png" />
-						<img class="iphone3" src="images/iphone.png" alt="iPhone4" />
-						<img class="iphone3-shadow" src="images/iphone-shadow.png" />
-						<img class="iphone4" src="images/iphone.png" alt="iPhone4" />
-						<img class="iphone4-shadow" src="images/iphone-shadow.png" />
-					</li>
-				</ul>
-
+					<input type="submit" value="Enviar">
+				</form>
+				<figure id="cont-media-circ">
+					<img id="circ-abajo" src="images/fondo-adn.png" alt="">
+					<figcaption>¿QUÉ ES EL ADN DE<br>TU EMPRESA?</figcaption>
+				</figure>				
 			</div>
+			<div id="sequence-theme">
+				<div id="sequence">
+					<ul class="sequence-canvas">
+						<li>
+							<img class="ipad" src="images/frase1.png" alt="iPad" />
+							<div class="slide2">
+								<img id="der" src="images/foco.png" />
+							</div>
+							
+						</li>
+						<li>
+							<img class="ipad" src="images/frase1.png" alt="iPad" />
+							<div class="slide2">
+								<img id="der" src="images/foco.png" />
+							</div>
+							
+						</li>
+						<li>
+							<img class="ipad" src="images/frase1.png" alt="iPad" />
+							<div class="slide2">
+								<img id="der" src="images/foco.png" />
+							</div>
+							
+						</li>
+						<li>
+							<img class="ipad" src="images/frase1.png" alt="iPad" />
+							<div class="slide2">
+								<img id="der" src="images/foco.png" />
+							</div>
+							
+						</li>
+					</ul>
+
+				</div>
+	
 		</div>
 		</section>
 
 		<section id="section_2" class="content" data-slide="1" data-stellar-background-ratio="0.5">
 			<div id="section_2_2" class="content" data-slide="1" data-stellar-background-ratio="2">
 			<div class="limitar-ancho">
-			<h2>Somos especialistas en</h2>
+			<h2 class="h2-sub">Somos especialistas en</h2>
 				<div id="contenedor-circ">
 					<div id="serv-izq">
 						<div id="serv-izq-arriba">
@@ -169,13 +180,23 @@
 					</div>
 				</div>
 				<div id="serv-abajo">
-					<div><p>¿Por qué es</p>
-					<p>importante una</p>
-					<p>identidad de marca?</p></div>
+					<div id="serv-abajo-izq">
+						<figure>
+							<img src="images/lalo-toon.png" alt="">
+						</figure>					
+						<p id="p1">¿Por qué es</p>
+						<p id="p2">importante una</p>
+						<p id="p3">identidad de marca?</p>
+					</div>
 
-					<div><p>¿Qué significa</p>
-					<p>posicionarse en</p>
-					<p>internet?</p></div>
+					<div id="serv-abajo-der">
+						<p id="p4">¿Qué significa</p>
+						<p id="p5">posicionarse en</p>
+						<p id="p6">internet?</p>
+						<figure>
+							<img src="images/noe-toon.png" alt="">
+						</figure>
+					</div>
 				</div>
 				</div>
 			</div>
@@ -183,75 +204,145 @@
 
 		<section id="section_3" class="content" data-slide="1" data-stellar-background-ratio="0.5">
 				<div class="limitar-ancho">
+				<h2 class="h2-sub">NUESTROS PROYECTOS</h2>
 					<div id="cont-cuadrado">
-						<figure>
-							<img class="portafolio" src="images/_0018_MM1.jpg" 
-														onmouseover="javascript:this.src='images/_0017_MM2.jpg';" 
-														onmouseout="javascript:this.src='images/_0018_MM1.jpg';"
-							alt="MyM Servicios de Alimentación en Perú">
-						</figure>
+						<a href="portafolio/MyM.html">
+							<figure  class="view view-first">
+								<img class="portafolio" src="images/_0018_MM1.jpg" 
+								alt="MyM Servicios de Alimentación en Perú">
+								
+								<div class="mask">
+			                        <h2>M&M - Alimentación</h2>
+			                        <p>Concesionario de<br>Alimentos </p>		  
+			                        <ul>
+			                        	<li>• Creación de marca</li>
+			                        	<li>• Publicidad Gráfica </li>
+			                        	<li>• Desarrollo Web</li>
+			                        </ul>
+	                   			</div>
+							</figure>
+						</a>
 
-						<figure>
+						<figure class="view view-first">
 							<img class="portafolio" src="images/_0016_LP1.jpg"
-														onmouseover="javascript:this.src='images/_0015_LP2.jpg';" 
-														onmouseout="javascript:this.src='images/_0016_LP1.jpg';"
 							 alt="La Protectora Corredores de Seguros en Perú">
+							 <div class="mask">
+		                        <h2>La Protectora</h2>
+		                        <p>Corredores de<br>Seguros</p>	
+		                         <ul>
+		                        	<li>• Diseño y Desarrollo Web</li>
+		                        </ul>	  
+                   			</div>
 						</figure>
 
-						<figure>
+						<figure class="view view-first">
 							<img class="portafolio" src="images/_0014_CAP1.jpg" 
-														onmouseover="javascript:this.src='images/_0013_CAP2.jpg';" 
-														onmouseout="javascript:this.src='images/_0014_CAP1.jpg';"
 							alt="Capuleto Organizadoras de bodas en Perú">
+							<div class="mask">
+		                        <h2>Capuleto</h2>
+		                        <p>Organizadoras<br>de bodas</p>
+		                         <ul>
+		                        	<li>• Creación de marca</li>
+		                        	<li>• Publicidad gráfica</li>
+		                        	<li>• Redes sociales</li>
+		                        	<li>• Desarrollo web</li>
+		                        </ul>		  
+                   			</div>
 						</figure>
 
-						<figure>
+						<figure class="view view-first">
 							<img class="portafolio" src="images/_0010_CA2.jpg"
-														onmouseover="javascript:this.src='images/_0010_CA2.jpg';" 
-														onmouseout="javascript:this.src='images/_0010_CA2.jpg';"
 							 alt="Catecma Especialistas en Acabados en Madera en Perú">
+							 <div class="mask">
+		                        <h2>Catecma</h2>
+		                        <p>Especialistas en<br>Acabados en Madera</p>	
+		                         <ul>
+		                        	<li>• Creación de marca</li>
+		                        	<li>• Desarrollo Web</li>
+		                        </ul>	  
+                   			</div>
 						</figure>
 
-						<figure>
+						<figure class="view view-first">
 							<img class="portafolio" src="images/_0012_FAS1.jpg"
-														onmouseover="javascript:this.src='images/_0011_FAS2.jpg';" 
-														onmouseout="javascript:this.src='images/_0012_FAS1.jpg';"
 							 alt="Fascinación Moda de medias y pantimedias en Perú">
+							 <div class="mask">
+		                        <h2>Fascinación</h2>
+		                        <p>Moda de medias<br>y pantimedias</p>		
+		                         <ul>
+		                        	<li>• Creación de marca</li>
+		                        	<li>• Publicidad Gráfica </li>
+		                        </ul>  
+                   			</div>
 						</figure>
 
-						<figure>
+						<figure class="view view-first">
 							<img class="portafolio" src="images/_0009_AA1.jpg"
-														onmouseover="javascript:this.src='images/_0008_AA2.jpg';" 
-														onmouseout="javascript:this.src='images/_0009_AA1.jpg';"
 							 alt="Andree Avilez LATAM BUSINESS DEVELOPMENT MANAGER">
+							 <div class="mask">
+		                        <h2>Andree Avilez</h2>
+		                        <p>LATAM BUSINESS<br>DEVELOPMENT MANAGER</p>
+		                         <ul>
+		                          	<li>• Estrategia Digital</li>
+		                        	<li>• Creación de marca</li>		                       
+		                        	<li>• Desarrollo Web</li>
+		                        </ul>	
+                   			</div>
 						</figure>
 
-						<figure>
+						<figure class="view view-first">
 							<img class="portafolio" src="images/_0007_PRO1.jpg"
-														onmouseover="javascript:this.src='images/_0006_PRO2.jpg';" 
-														onmouseout="javascript:this.src='images/_0007_PRO1.jpg';"
 							 alt="Prodesem Comercializadora y desverdizadora de cítricos en Perú">
+							 <div class="mask">
+		                        <h2>Prodesem</h2>
+		                        <p>Comercializadora y<br>desverdizadora de cítricos</p>	
+		                         <ul>
+		                        	<li>• Creación de marca</li>
+		                        	<li>• Publicidad Gráfica </li>
+		                        	<li>• Desarrollo Web</li>
+		                        </ul>	  
+                   			</div>
 						</figure>
 
-						<figure>
+						<figure class="view view-first">
 							<img class="portafolio" src="images/_0005_MAG1.jpg"
-														onmouseover="javascript:this.src='images/_0017_MM2.jpg';" 
-														onmouseout="javascript:this.src='images/_0005_MAG1.jpg';"
 							 alt="Magromar Importación y exportación de productos alimenticios en Perú">
+							 <div class="mask">
+		                        <h2>Magromar</h2>
+		                        <p>Importación y exportación<br>de productos alimenticios</p>
+		                         <ul>
+		                        	<li>• Publicidad Gráfica </li>
+		                        	<li>• Desarrollo Web</li>
+		                        </ul>		  
+                   			</div>
 						</figure>
 
-						<figure>
+						<figure class="view view-first">
 							<img class="portafolio" src="images/_0003_COR1.jpg"
-														onmouseover="javascript:this.src='images/_0002_CO2.jpg';" 
-														onmouseout="javascript:this.src='images/_0003_COR1.jpg';"
 							 alt="Joyería Taller Correa especialistas en anillos de compromiso y aros de matrimonio en Perú">	
+							 <div class="mask">
+		                        <h2>Joyería Taller Correa</h2>
+		                        <p>especialistas en anillos de<br>compromiso y aros de matrimonio</p>	
+		                         <ul>
+		                        	<li>• Creación de marca</li>
+		                        	<li>• Publicidad Gráfica </li>
+		                        	<li>• Desarrollo Web</li>
+		                        </ul>	  
+                   			</div>
 						</figure>
 
-						<figure>
+						<figure class="view view-first">
 							<img class="portafolio" src="images/_0001_PAC1.jpg"
-														onmouseover="javascript:this.src='images/_0000_PAC2.jpg';" 
-														onmouseout="javascript:this.src='images/_0001_PAC1.jpg';"
 							 alt="PAC Ingenieros Tratamientos de Agua en Perú">
+							 <div class="mask">
+		                        <h2>PAC Ingenieros</h2>
+		                        <p>Tratamientos de Agua</p>		  
+		                         <ul>
+		                        	<li>• Creación de marca</li>
+		                        	<li>• Publicidad Gráfica </li>
+		                        	<li>• Desarrollo Web</li>
+		                        </ul>
+                   			</div>
 						</figure>
 					</div>
 					<!--a href="#section_4" rel="m_PageScroll2id">Next section</a> | <a href="#top">Back to top</a-->
@@ -260,34 +351,89 @@
 
 		<section id="section_4" class="content">
 			<div class="limitar-ancho">
+				<h2 class="h2-sub">Confían en nosotros</h2>
 				<div id="cont-cuadrado">
 					<p>Sabemos que las relaciones se construyen con el tiempo, aquí las empresas que a lo largo de nuestro camino han apostado por nosotros.</p>
-					<figure><img src="images/clientes_bd.jpg" alt="Black & Decker"></figure>
-					<figure><img src="images/clientes_vi.jpg" alt=""></figure>
-					<figure><img src="images/clientes_dw.jpg" alt=""></figure>
-					<figure><img src="images/clientes_lp.jpg" alt=""></figure>
-					<figure><img src="images/clientes_pr.jpg" alt=""></figure>
-					<figure><img src="images/clientes_ccl.jpg" alt=""></figure>
-					<figure><img src="images/clientes_mym.jpg" alt=""></figure>
-					<figure><img src="images/clientes_fa.jpg" alt=""></figure>
+					<figure class="client"><img src="images/dw.png" alt=""></figure>
+					<figure><img src="images/bd.jpg" alt=""></figure>
+					<figure><img src="images/prod.jpg" alt=""></figure>
+					<figure class="client"><img src="images/ccl.jpg" alt=""></figure>
+					<br id="id5">
+					<figure><img src="images/aa.jpg" alt=""></figure>
+					<figure><img src="images/fas.jpg" alt=""></figure>
+					<figure><img src="images/vis.jpg" alt=""></figure>
+					<figure><img src="images/lp.jpg" alt=""></figure>
+					<figure><img src="images/mm.jpg" alt=""></figure>
+					<br id="id6">
+					<figure><img src="images/bo.jpg" alt=""></figure>
+					<figure class="client"><img src="images/te.jpg" alt=""></figure>
+					<figure class="client"><img src="images/tjr.jpg" alt=""></figure>
+					<figure><img src="images/sai.jpg" alt=""></figure>
 				</div>
 				<!-- <a href="#section_2" rel="m_PageScroll2id">Check section 2</a> | <a href="#top">Back to top</a></p>-->
 			</div>
 		</section>
 
 		<section id="section_5" class="content">
-			<div id="limitar-ancho2" class="limitar-ancho">
+			<div class="limitar-ancho">
 				<!--div id="circ-izq"></div-->
-				<div id="sect5-der">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, dignissimos, nemo, repellat odit sapiente explicabo harum pariatur eius unde iusto ut error voluptas iure reiciendis porro minima nesciunt voluptatibus praesentium delectus quo repudiandae neque mollitia maxime. Excepturi, culpa nam rerum tempore debitis dolorum totam quia dicta ipsam voluptatibus accusamus alias.</p>
+				<h2 class="h2-sub">El equipo</h2>
+				<div id="sect5-arriba">
+					<p>Frase inspiradora que Noelia esta pensando para decirme luego y poenrla aqui y debajo el texto que tenemos sobre nosotross</p>
 				</div> 
-				<br><br>
+					<div id="nosotros-izq">
+						<p>Somos un equipo de profesionales especializados en Marketing y Publicidad, capacitadores y aliados estratégicos de la Cámara de
+						Comercio de Lima. Esto nos permite asesorar y mantener contacto permanente con empresas asociadas a ella.</p>
+					</div>
+					<div id="nosotros-der">
+						<p>En Invitro creamos, definimos e implementamos estrategias de marketing y marketing digital, con una comunicación innovadora
+						y efectiva, diseñadas desde un punto de vista creativo y humano. Nuestro objetivo es lograr y/o reforzar el posicionamiento de tu marca en tus consumidores.</p>
+					</div>
+				
+				<div id="cont-trabajadores">
+					<figure>
+						<img class="trabajador" src="images/_0000_noe.png" alt="">
+					</figure>
+					<figure>
+						<img class="trabajador" src="images/_0001_hugo.png" alt="">
+					</figure>
+					<figure>
+						<img class="trabajador" src="images/_0002_chino.png" alt="">
+					</figure>
+					<figure>
+						<img class="trabajador" src="images/_0003_jim.png" alt="">
+					</figure>
+					<figure>
+						<img class="trabajador" src="images/_0004_lalo.png" alt="">
+					</figure>
+					<figure>
+						<img class="trabajador" src="images/_0005_sol.png" alt="">
+					</figure>
+					<br>
+					<figure>
+						<img class="trabajador" src="images/_0006_alan.png" alt="">
+					</figure>
+					<figure>
+						<img class="trabajador" src="images/_0007_dennis.png" alt="">
+					</figure>
+					<figure>
+						<img class="trabajador" src="images/_0008_andree.png" alt="">
+					</figure>
+					<figure>
+						<img class="trabajador" src="images/_0009_lm.png" alt="">
+					</figure>
+					<figure>
+						<img class="trabajador" src="images/_0010_gabo.png" alt="">
+					</figure>
+				</div>
+
 				<!--a href="#section_4" rel="m_PageScroll2id">Previous section</a> | <a href="#top">Back to top</a></p-->
 			</div>
 		</section>
 
 	<section id="section_6" class="content">
 				<div class="limitar-ancho">
+				<h2 class="h2-sub">¡Hola!</h2>
 					<div id="cont-contacto">
 						<div id="contact-sup">
 							<div id="num-mail">
@@ -308,16 +454,45 @@
 						<form action="">
 							<label>¿Cómo te llamas?</label><input type="text" placeholder="Nombre"> <br>	
 							<label>¿Dónde trabajas?</label><input type="text" placeholder="Empresa"> <br>	
-							<label>¿A qué número te podemos llamar?</label><input type="text" placeholder="Teléfono"> <br>	
+							<label>¿A qué número te podemos llamar?</label><input type="tel" placeholder="Teléfono"> <br>	
 							<label>¿A qué correo te podemos escribir?</label><input type="text" placeholder="Correo Electrónico"> <br>	
-							<label>¿Qué te gustaría comentarnos?</label><textarea placeholder="Comentario"></textarea><br>
-							<div class="cont-btn"><input type="submit" value=" "></div>		
+							<label>¿Qué necesitas?</label>
+							<div id="cont-check">
+								<div>
+									<div class="check-izq">
+										<input type="checkbox"><p>Creación de Marca</p>
+									</div>
+									<div class="check-der">
+										<input type="checkbox"><p>Diseño y desarrollo web</p>
+									</div>
+									<div class="check-izq">
+										<input type="checkbox"><p>Comunicación interna</p>
+									</div>
+									<div class="check-der">
+										<input type="checkbox"><p>Gestión de redes sociales</p>
+									</div>
+									<div class="check-izq">
+										<input type="checkbox"><p>Publicidad gráfica</p>
+									</div>
+									<div id="otros" class="check-der">
+										<input type="checkbox"><p>Otros</p>
+									</div>			
+								</div>
+								<textarea name="" rows="2" placeholder="Especifica otro servicio"></textarea>				
+							</div>
+
+							<div class="cont-btn"><input type="submit" value=""></div>	
+
+
 						</form> 
 
 						<div id="contact-der">
-							<p class="contact-soc"><img src="images/logo-face.jpg" alt="Facebook Invitro Creativos">/invitrocreativos</p>
-							<p class="contact-soc"><img src="images/logo-twtt.jpg" alt="Twitter Invitro Creativos">/invitrocreativos</p>
-							
+
+							<div id="cont-social">
+								<p class="contact-soc"><img src="images/logo-face.jpg" alt="Facebook Invitro Creativos">/invitrocreativos</p>
+								<p class="contact-soc"><img src="images/logo-twtt.jpg" alt="Twitter Invitro Creativos">/invitrocreativos</p>
+							</div>
+
 							<div id="num-mail">
 								<p>Puedes llamarnos a:</p>
 								<p>+51 1 637-8061 / +51 1 637-8062</p>

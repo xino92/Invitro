@@ -15,6 +15,7 @@ Sequence.js and its dependencies are (c) Ian Lunn Design 2012 - 2013 unless othe
 .sequence-canvas li{
   list-style: none;
 }
+/* !CSS RESET */
 /* prefix declarations */
 /* Keyframes */
 @-webkit-keyframes paused {
@@ -217,6 +218,7 @@ Sequence.js and its dependencies are (c) Ian Lunn Design 2012 - 2013 unless othe
   width: 100%;
   height: 600px;
   overflow: hidden;
+  padding-top: 5em;
 }
 
 /* when in fallback mode (for browsers that don't support transitions) hide anything outside of the Sequence container */
@@ -228,9 +230,9 @@ Sequence.js and its dependencies are (c) Ian Lunn Design 2012 - 2013 unless othe
   position: relative;
   height: 600px;
   width: 100%;
-  max-width: 960px;
+  /*max-width: 960px;*/
   margin: 0 auto;
-  background: white;
+
   /* Preloader */
   /* !Preloader */
   /* Frame Animations */
@@ -239,6 +241,8 @@ Sequence.js and its dependencies are (c) Ian Lunn Design 2012 - 2013 unless othe
 #sequence > .sequence-canvas {
   height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 #sequence > .sequence-canvas > li {
   position: absolute;
@@ -491,7 +495,8 @@ Sequence.js and its dependencies are (c) Ian Lunn Design 2012 - 2013 unless othe
   transition-duration: 1.5s;
 }
 #sequence .animate-in .intro {
-  left: 100px;
+  /*left: 100px;*/
+  left: 50%;
   top: 220px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -529,10 +534,11 @@ Sequence.js and its dependencies are (c) Ian Lunn Design 2012 - 2013 unless othe
   -o-transform: rotate(-20deg);
   transform: rotate(-20deg);
   z-index: 5;
+  width: 320px;
 }
 #sequence .animate-in .ipad {
-  left: 50px;
-  top: 20px;
+  left: 58%;
+  top: 80px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
@@ -559,6 +565,11 @@ Sequence.js and its dependencies are (c) Ian Lunn Design 2012 - 2013 unless othe
   -o-transition-duration: 1s;
   transition-duration: 1s;
 }
+
+#der{
+  width: 320px;
+}
+
 #sequence .ipad-shadow {
   left: 30px;
   top: 478px;
@@ -569,9 +580,11 @@ Sequence.js and its dependencies are (c) Ian Lunn Design 2012 - 2013 unless othe
   -ms-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
+  width: 200px;
 }
 #sequence .animate-in .ipad-shadow {
-  left: 30px;
+  top: 364px;
+  left: 50%;
   opacity: 1;
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
@@ -600,8 +613,8 @@ Sequence.js and its dependencies are (c) Ian Lunn Design 2012 - 2013 unless othe
   transform: rotate(20deg);
 }
 #sequence .animate-in .slide2 {
-  left: 450px;
-  top: 220px;
+  left: 53%;
+  top: 240px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
