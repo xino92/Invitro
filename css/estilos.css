@@ -157,11 +157,12 @@ a{
 	display: inline-block;
 	vertical-align: top;
 	width: 28em;
-	height: 28em;
+	height: 29em;
 	position: absolute;
 	left: 13%;
 	/*top: 75px;*/
 	top: 7em;
+	/*top: 20%;%ALTO*/
 	border-radius: 50%;
 	z-index: 999;
 }
@@ -270,7 +271,7 @@ span{
 }
 
 #section_2 .limitar-ancho{
-	padding-top: 75px;
+	padding-top: 7%;
 }
 
 #section_2 h2{
@@ -544,7 +545,7 @@ span{
 
 
 #section_3 .limitar-ancho{
-	padding-top: 7em;
+	padding-top: 10%;
 }
 
 #section_3 figure{
@@ -617,7 +618,7 @@ span{
 	 font-size: 13px;
 	 text-align: left;
 	 margin: 0;
-	padding: 0 8px;
+	 padding: 0 8px;
 }
 
 .view a.info: hover {
@@ -864,6 +865,11 @@ h1 span{
 	text-align: center;
 }
 
+#section_4 .limitar-ancho
+{
+	padding-top: 10%;
+}
+
 #cont-cuadrado  p{
 	margin: 0 auto;
 	margin-bottom: 80px;
@@ -878,6 +884,11 @@ h1 span{
 #section_5{
 	background: #E6E6E6;
 	text-align: center;
+}
+
+#section_5 .limitar-ancho
+{
+	padding-top: 10%;
 }
 
 #sect5-arriba{
@@ -932,6 +943,10 @@ h1 span{
 	color: white;
 }
 
+#section_6 .limitar-ancho
+{
+	padding-top: 10%;
+}
 
 #cont-contacto{
 	margin: 0 auto;
@@ -1107,9 +1122,26 @@ textarea{
 
 /*************************************************************/
 
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 1500px) {
+	#serv-abajo
+	{
+		margin-bottom: 6em;
+	}
+
+	#sect1-izq
+	{
+		left: 22%;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	
 	#cont-cuadrado p{
 		margin-bottom: 30px;
+	}
+	
+	#sect1-izq{
+		top: 11em;
 	}
 
 }

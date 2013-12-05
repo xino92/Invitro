@@ -565,7 +565,172 @@ Sequence.js and its dependencies are (c) Ian Lunn Design 2012 - 2013 unless othe
   -o-transition-duration: 1s;
   transition-duration: 1s;
 }
-
+/*******/
+#sequence .ipad1 {
+  right: 450px;
+  position: absolute;
+  left: -770px;
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+  z-index: 5;
+  width: 320px;
+}
+#sequence .animate-in .ipad1 {
+  left: 58%;
+  top: 80px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+#sequence .animate-out .ipad1 {
+  left: 800px;
+  opacity: 0;
+  top: -420px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+#sequence .ipad2 {
+  right: -450px;
+  position: absolute;
+  top: -770px;
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+  z-index: 5;
+  width: 320px;
+}
+#sequence .animate-in .ipad2 {
+  left: 58%;
+  top: 80px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+#sequence .animate-out .ipad2 {
+  right: -1200px;
+  opacity: 0;
+  bottom: -120px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+#sequence .ipad3 {
+  bottom: -450px;
+  position: absolute;
+  left: -500px;
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+  z-index: 5;
+  width: 320px;
+}
+#sequence .animate-in .ipad3 {
+  left: 58%;
+  top: 80px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+#sequence .animate-out .ipad3 {
+  left: -50px;
+  opacity: 0;
+  top: -20px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+#sequence .ipad4 {
+  right: -450px;
+  position: absolute;
+  bottom: -500px;
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+  z-index: 5;
+  width: 320px;
+}
+#sequence .animate-in .ipad4 {
+  left: 58%;
+  top: 80px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+#sequence .animate-out .ipad4 {
+  right: -50px;
+  opacity: 0;
+  bottom: -20px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+}
+/*****/
 #der{
   width: 320px;
 }
@@ -641,6 +806,7 @@ Sequence.js and its dependencies are (c) Ian Lunn Design 2012 - 2013 unless othe
   -o-transition-duration: 1s;
   transition-duration: 1s;
 }
+
 #sequence .iphone2 {
   left: 400px;
   position: absolute;
@@ -897,4 +1063,21 @@ Sequence.js and its dependencies are (c) Ian Lunn Design 2012 - 2013 unless othe
   -ms-transition-duration: 1s;
   -o-transition-duration: 1s;
   transition-duration: 1s;
+}
+
+@media screen and (min-width: 1400px) {
+    
+    #sequence .animate-in .ipad,
+    #sequence .animate-in .ipad1,
+    #sequence .animate-in .ipad2,
+    #sequence .animate-in .ipad3,
+    #sequence .animate-in .ipad4
+    {
+      top: 120px;
+    }
+
+    #sequence .animate-in .slide2
+    {
+      top: 290px;
+    }
 }
