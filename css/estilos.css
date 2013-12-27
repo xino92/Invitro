@@ -8,6 +8,10 @@
 	src: url(../fuentes/gill-sans-mt-bold.ttf) ;
 }
 
+@font-face{
+	font-family: gillitalic;
+	src: url(../fuentes/Gill-Sans-MT-Italic.ttf) ;
+}
 
 
 @font-face{
@@ -39,12 +43,80 @@ body{
 	padding:0;
 }
 
+footer
+{
+	background: #3d3d3c;
+	font-family: 'gill';
+	margin: 0 auto;
+	padding: 2%;
+}
+
+footer #cont-footer
+{
+	margin: 0 auto;
+	width: 1024px;
+}
+
+footer #cont-footer ul:nth-child(4)
+{
+	width: 25%;
+}
+
+footer #cont-footer ul:nth-child(4) p
+{
+	text-align: left;
+}
+
+footer #cont-footer ul
+{
+	display: inline-block;
+	text-align: right;
+	vertical-align: top;
+	width: 15%;
+}
+
+footer #cont-footer ul li
+{
+	color: white;
+	font-size: 14px;
+	list-style: none;
+	text-align: left !important;
+}
+
+footer #cont-footer ul p 
+{
+	color: #e6e6e6;
+	font-size: 15px;
+
+}
+
+footer #cont-footer ul .marca-foo
+{
+	color: #00dfc5;
+	cursor: default;
+	cursor: pointer;
+}
+
+footer #copy
+{
+	color: #e6e6e6;
+	font-size: 13px;
+	text-align: right;
+}
+
+.link{
+	color: #7ddec5 !important;
+	font-weight: bold;
+	font-family: gillitalic;
+}
+
 #page{
 	height: 100%;
 }
 
 #logo{
-	margin-left: 30px;
+	width: 85%;
+	margin-top: 0.2em;
 }
 
 #navigationMenu{
@@ -56,6 +128,7 @@ body{
 	-webkit-box-shadow: 1px 5px 11px rgba(50, 50, 50, 0.31);
 	-moz-box-shadow:    1px 5px 11px rgba(50, 50, 50, 0.31);
 	box-shadow:         1px 5px 11px rgba(50, 50, 50, 0.31);
+	height: 4em;
 
 }
 
@@ -71,6 +144,7 @@ body{
 	list-style:none;
 	margin: 0 auto;
 	width: 1024px;
+	text-align: center;
 }
 
 #cont-logo{
@@ -80,28 +154,36 @@ body{
 	margin-top: 6px;
 }
 
+#cont-logo2{
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+	margin:5px 8px;
+}
+
+
 #navigationMenu nav ul{
+	color: #4d4d4d;
 	display: inline-block;
 	list-style:none;
+	margin-top: 1.4em;
 	overflow:hidden; 
 	padding:0; 
-	vertical-align: top;
-	/*width: 740px;*/
-	/*width: 820px;*/
 	text-align: right;
+	vertical-align: top;
 }
 
 #navigationMenu ul li{
 	/*float:left;*/
 	display: inline-block;
-	margin:2px 28px;
+	margin:2px 26px;
 	vertical-align: top;
 	font-family: gill;
 	font-size: 12px;
 }
 
 #navigationMenu ul li a{
-	color: black;
+	color: #4d4d4d;
 }
 
 .content{
@@ -135,7 +217,7 @@ a{
 /***********************Inicio************************/
 /*****************************************************/
 
-#section_1{
+#inicio{
 	background: #494949; /* Old browsers */
 	background: -moz-radial-gradient(center, ellipse cover,  #494949 77%, #1c1c1c 100%); /* FF3.6+ */
 	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(77%,#494949), color-stop(100%,#1c1c1c)); /* Chrome,Safari4+ */
@@ -148,7 +230,7 @@ a{
 	text-align: center;
 }
 
-#section_1 .limitar-ancho{
+#inicio .limitar-ancho{
 	padding-top: 30px;
 }
 
@@ -156,20 +238,20 @@ a{
 	background: #00DEC5;
 	display: inline-block;
 	vertical-align: top;
-	width: 28em;
+	width: 29em;
 	height: 29em;
 	position: absolute;
 	left: 13%;
 	/*top: 75px;*/
 	top: 7em;
-	/*top: 20%;%ALTO*/
 	border-radius: 50%;
 	z-index: 999;
 }
 
 #sect1-izq form{
-	padding-top: 49px;
 	color: black;
+	margin-left: -5px;
+	padding-top: 60px;
 }
 
 #form-sect h2{
@@ -180,12 +262,20 @@ a{
 }
 
 #form-sect p{
+	color: #4d4d4d;
 	font-family: gill;
 	font-size: 14px;
+	line-height: 16px;
+	margin: 0;
 }
 
+#section-izq form span
+{
+	color: #4d4d4d;
+}
 
-#sect1-izq input[type=text], #sect1-izq input[type=tel], #sect1-izq input[type=mail]{
+#sect1-izq input[type=text], #sect1-izq input[type=tel], #sect1-izq input[type=mail],
+#sect1-izq span{
 	font-family: gill;
 	font-size: 14px;
 	margin: 4px;
@@ -215,7 +305,7 @@ a{
 
 #circ-abajo{
 	bottom: 6px;
-	left: 57px;
+	left: 65px;
 	position: absolute;
 	width: 335px;
 }
@@ -259,22 +349,22 @@ span{
 }
 
 
-#section_2{
+#servicios{
 	/*background: white;*/
 	background-image:url('../images/fondo-burb.jpg');
 	text-align: center;
 }
 
-#section_2_2{
+#servicios_2{
 	background-image:url('../images/fondo2.png');
 	
 }
 
-#section_2 .limitar-ancho{
-	padding-top: 7%;
+#servicios .limitar-ancho{
+	padding-top: 5.5%;
 }
 
-#section_2 h2{
+#servicios h2{
 	font-family: antoniobold;
 	font-size: 43px;
 	margin-left: 30px;
@@ -331,6 +421,7 @@ span{
 }
 
 #contenedor-circ article p{
+	color: #4d4d4d;
 	font-family: gill;
 	font-size: 13px;
 	text-align: justify;
@@ -415,6 +506,7 @@ span{
 	margin-top: -27px;
 	font-size: 13px;
 	font-family: gill;
+	color: #4d4d4d;
 }
 
 #serv-der{
@@ -437,6 +529,7 @@ span{
 	margin-top: -27px;
 	font-size: 13px;
 	font-family: gill;
+	color: #4d4d4d;
 }
 
 #serv-abajo{
@@ -506,7 +599,19 @@ span{
 
 #serv-abajo-izq{
 	background: #00DFC5;
+	transition:  transform 0.5s;
+	-webkit-transition:-webkit-transform 0.5s;
+	transform:scale(1,1);
+	-webkit-transform:scale(1,1);
+	-mox-transform:scale(1,1);
+	-o-transform:scale(1,1);
+	-ms-transform:scale(1,1);
 }
+
+/*#serv-abajo-izq:hover{
+	transform:scale(1.1,1.1);
+	-webkit-transform:scale(1.1,1.1);
+}*/
 
 
 #serv-abajo #serv-abajo-izq  figure img{
@@ -518,7 +623,20 @@ span{
 
 #serv-abajo-der{
 	background: #ED1E79;
+		transition:  transform 0.5s;
+	-webkit-transition:-webkit-transform 0.5s;
+	transform:scale(1,1);
+	-webkit-transform:scale(1,1);
+	-mox-transform:scale(1,1);
+	-o-transform:scale(1,1);
+	-ms-transform:scale(1,1);
 }
+
+
+/*#serv-abajo-der:hover{
+	transform:scale(1.1,1.1);
+	-webkit-transform:scale(1.1,1.1);
+}*/
 
 #serv-abajo #serv-abajo-der  figure img{
 	position: absolute;
@@ -530,8 +648,13 @@ span{
 /*********************Portafolio**********************/
 /*****************************************************/
 
-#section_3{
-	background: url(../images/fondo.jpg) 50% 0 repeat-x fixed;
+#portafolio{
+	background: url(../images/fondo-port.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 	text-align: center;
 }
 
@@ -543,21 +666,27 @@ span{
 	color: #4D4D56;
 }
 
+#portafolio .h2-sub{
+	color: white !important;
+}
 
-#section_3 .limitar-ancho{
+#portafolio .limitar-ancho{
 	padding-top: 10%;
 }
 
-#section_3 figure{
+#portafolio figure{
 	cursor: pointer;
 	display: inline-block;
 	height: 160px;
 	margin: 8px;
 	vertical-align: top;
 	width: 160px;
+	-webkit-box-shadow: 0px 0px 12px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 12px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 12px rgba(50, 50, 50, 0.75);
 }
 
-#section_3 #cont-cuadrado{
+#portafolio #cont-cuadrado{
 	margin: 0 auto;
 	width: 900px;
 }
@@ -603,9 +732,9 @@ span{
    text-align: left;
 }
 
-.view p{
+.view .mask p{
 	 padding: 0 8px;
-	 color: white;
+	 color: white !important;
 	 font-family: gill;
 	 font-size: 13px;
 	 text-align: left !important;
@@ -618,7 +747,7 @@ span{
 	 font-size: 13px;
 	 text-align: left;
 	 margin: 0;
-	 padding: 0 8px;
+	padding: 0 8px;
 }
 
 .view a.info: hover {
@@ -768,7 +897,6 @@ span{
 	height: 95%;
 	display: inline-block;
 	vertical-align: top;
-
 }
 
 .art-der{
@@ -805,6 +933,10 @@ h1 span{
 	color: #00DFC5;
 }
 
+.signo-mayor{
+	width: 0.35em;
+}
+
 .art-der h2{
 	background: white;
 	color: #4D4D4D;
@@ -814,7 +946,7 @@ h1 span{
 }
 
 .art-margen .abajo{
-	margin-top: 7.8em;
+/*	margin-top: 7.8em;*/
 	width: 95%;
 }
 
@@ -825,9 +957,11 @@ h1 span{
 	text-align: justify;
 }
 
-
-
-
+.pagina{
+	color: #00DFC5;
+	font-family: gill;
+	font-size: 16px;	
+}
 
 
 
@@ -839,11 +973,15 @@ h1 span{
 /**********************Clientes***********************/
 /*****************************************************/
 
-#section_4{
+#clientes{
 	background: white;
 }
 
-#section_4 figure{
+#clientes .limitar-ancho{
+	padding-top: 5.5%;
+}
+
+#clientes figure{
 	display: inline-block;
 	margin: 0.5em 2.2em;
 	vertical-align: middle;
@@ -855,25 +993,22 @@ h1 span{
 	width: 100px !important;
 }
 
-#section_4 figure img{
+#clientes figure img{
 	width: 100%;
 }
 
-#section_4 #cont-cuadrado{
+#clientes #cont-cuadrado{
 	margin: 0 auto;
 	margin-top: 1.5em;
 	text-align: center;
 }
 
-#section_4 .limitar-ancho
-{
-	padding-top: 10%;
-}
-
 #cont-cuadrado  p{
 	margin: 0 auto;
-	margin-bottom: 80px;
 	/*width: 700px;*/
+	color: #4d4d4d;
+	font-family: gill;
+	margin-bottom: 80px;
 	text-align: center;
 }
 
@@ -881,14 +1016,13 @@ h1 span{
 /*********************Nosotros************************/
 /*****************************************************/
 
-#section_5{
-	background: #E6E6E6;
+#nosotros{
+	background: #00DFC5;
 	text-align: center;
 }
 
-#section_5 .limitar-ancho
-{
-	padding-top: 10%;
+#nosotros .limitar-ancho{
+	padding-top: 6%;
 }
 
 #sect5-arriba{
@@ -898,7 +1032,9 @@ h1 span{
 }
 
 #sect5-arriba p, #nosotros-izq, #nosotros-der{
+	color: #4d4d4d;
 	font-family: gill;
+	line-height: 18px;
 }
 
 #nosotros-izq{
@@ -933,20 +1069,25 @@ h1 span{
 /**********************Contacto***********************/
 /*****************************************************/
 
-#section_6{
-	background: #0589a0 url(../images/fondo-cont.jpg) 50% 0 repeat-x fixed;
+#contacto{
+	background: url(../images/fondo-cont.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 	width: 100%;
 	height: 100%;
 }
 
-#section_6 .h2-sub{
+#contacto .limitar-ancho{
+	padding-top: 6.5%;
+}
+
+#contacto .h2-sub{
 	color: white;
 }
 
-#section_6 .limitar-ancho
-{
-	padding-top: 10%;
-}
 
 #cont-contacto{
 	margin: 0 auto;
@@ -965,7 +1106,7 @@ h1 span{
 #contact-der{
 	display: inline-block;
 	font-size: 14px;
-	margin: 20px 0 0 50px;
+	margin: 6px 0 0 50px;
 	vertical-align: top;
 	width: 295px;
 }
@@ -991,7 +1132,7 @@ h1 span{
 	font-size: 13px;
 	padding: 5px 0 10px 20px;
 	width: 100%;
-	margin-top: 3.5em;
+	margin-top: 3em;
 	font-family: gill;
 }
 
@@ -1009,7 +1150,7 @@ h1 span{
 {
 	margin-right: 10px;
 	vertical-align: middle;
-	width: 8%;
+	width: 10%;
 }
 
 
@@ -1019,33 +1160,34 @@ h1 span{
 	overflow: hidden;	
 }
 
-#section_6 form{
+#contacto form{
 	display: inline-block;
-	font-size: 14px;
+	font-size: 13px;
 	margin: 20px 0 0 0;
 	text-align: justify;
 	vertical-align: top;
-	width: 600px;
+	width: 620px;
 }
-
-#section_6 form .cont-btn
+/*
+#contacto form .cont-btn
 {
 	margin-top: 10px;
-	text-align: right;
-	width: 75%;
-}
+	width: 220px;
+	float: right;
+}*/
 
-#section_6 form label{
+#contacto form label{
 	color: white;
 	display: inline-block;
 	font-family: gill;
+	font-size: 15px;
 	margin-bottom: 8px;
 	margin-right: 15px;
 	text-align: right;
-	width: 210px;
+	width: 220px;
 }
 
-#section_6 form input[type="text"], #section_6 form input[type="tel"]{
+#contacto form input[type="text"], #contacto form input[type="tel"]{
 	font-family: gill;
 	height: 28px;
 	margin-bottom: 8px;
@@ -1054,17 +1196,36 @@ h1 span{
 	width: 364px;
 }
 
-#section_6 form input[type="submit"]
+#contacto form input[type="submit"]
 {
-	background: url(../images/enviar.jpg) no-repeat;
+	background: url(../images/enviar.png) no-repeat;
 	background-size: 100% 100%;
 	border: none;
-	height: 60px;
-	width: 50px;
+	height: 70px;
+	width: 60px;
+}
+
+#contacto form .pais
+{
+	color: black;
+}
+
+#contacto form .peru
+{
+	margin-left: 180px;
+	width: 100px;
 }
 
 
 
+.cont-btn{
+	background: none !important;
+	text-align: center;
+}
+
+#enviar{
+		margin-top: 1em;
+	}
 
 .saltolinea
 {
@@ -1075,38 +1236,40 @@ h1 span{
 #cont-check{	
 	border: none;
 	margin-bottom: 8px;
-	width: 362px;
+	width: 359px;
 	display: inline-block;
 	vertical-align: top;
 	padding: 0.3em;
 }
 
 #cont-check div{
-	background: #00DFC5;
+	/*background: #00DFC5;*/
+	background: white;
+}
+
+#cont-check #checks-contac
+{
+	border: 1px solid #abadb3;
 }
 
 .check-izq{
-	width: 168px;
+	width: 167px;
 	display: inline-block;
 	vertical-align: top;
 }
 
 .check-der{
-	width: 182px;
+	width: 181px;
 	display: inline-block;
 	vertical-align: top;
 }
 
-#otros{
-	padding-left: 5px;
-}
 
 #cont-check p, input[type="checkbox"]{
 	color: #4D4D4D;
 	display: inline-block;
 	font-family: gill;
 	margin: 0.4em;
-	vertical-align: top;
 }
 
 textarea{
@@ -1118,7 +1281,9 @@ textarea{
 
 }
 
-
+#otros{
+	padding-left: 5px;
+}
 
 /*************************************************************/
 
@@ -1131,6 +1296,14 @@ textarea{
 	#sect1-izq
 	{
 		left: 22%;
+	}
+
+	#contacto .limitar-ancho, #clientes .limitar-ancho, #nosotros .limitar-ancho{
+		padding-top: 10%;
+	}
+
+	#contenedor-circ{
+		margin-top: 2em;
 	}
 }
 
@@ -1175,10 +1348,22 @@ textarea{
 		display: none;
 	}
 
+	footer #cont-footer{
+		width: auto;
+	}
+
 }
 
 
 @media screen and (max-width: 1025px) {
+	
+	footer
+	{
+		display: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
 
 	#navigationMenu nav{
 		width: 100%;
@@ -1191,6 +1376,37 @@ textarea{
 	.limitar-ancho{
 		width: 98%;
 	}
+
+	#servicios .limitar-ancho{
+		padding-top: 8%;
+	}
+	
+	#portafolio .limitar-ancho{
+		padding-bottom: 6%;
+	}
+
+	#cont-cuadrado p{
+		margin-bottom: 30px;
+	}
+
+	#clientes .limitar-ancho{
+		padding-top: 8%;
+		padding-bottom: 6%;
+	}
+
+	#nosotros .limitar-ancho{
+		padding-top: 8%;
+		padding-bottom: 6%; 
+	}
+
+	#contacto .limitar-ancho{
+		padding-bottom: 6%;
+	}
+
+	footer #cont-footer{
+		display: none;
+	}
+
 }
 
 @media screen and (max-width: 1019px) {
@@ -1203,21 +1419,23 @@ textarea{
 	#navigationMenuResp1
 	{
 		background:#fff;
-		border:1px solid #666; 
 		display: inline-block;
 		padding:5px; 
 		position:fixed; 
 		width: 100%;
 		z-index: 9999;
+		-webkit-box-shadow: 1px 5px 11px rgba(50, 50, 50, 0.31);
+		-moz-box-shadow:    1px 5px 11px rgba(50, 50, 50, 0.31);
+		box-shadow:         1px 5px 11px rgba(50, 50, 50, 0.31);
 	}
 
 	#menu-der{
 		width: 100%;
 		float: right;
 		position: absolute;
-		right: 30px;
+		right: 20px;
 		text-align: right;
-		top: 0
+		top: 41%;
 	}
 
 	#menu-de p{
@@ -1227,16 +1445,30 @@ textarea{
 
 	#navigationMenuResp1 #listres li{
 		display: inline-block;
+		font-family: gill;
+		font-size: 12px;
 		margin: 1.2em 1.3em;
+		text-transform: uppercase;
+		
+	}
+
+/*	#i-blog{
+		font-size: 13px !important;
+	}
+*/
+	#navigationMenuResp1 #listres li a{
+		color: #4d4d4d;
 	}
 
 	#listres{
 		background: white;
+		margin-top: 16px;
 		margin: 0;
-		text-align: left;
+		padding: 5px 20px;
+		text-align: center;
 		width: 100%;
-		margin-top: 25px;
 	}
+
 
 	#cat_icon{
 		display: none;
@@ -1267,7 +1499,9 @@ textarea{
 		width: 100%;
 	}
 	
-
+	#cont-logo{
+		margin-left: 18px;
+	}
 
 
 }
@@ -1276,113 +1510,18 @@ textarea{
 	#id6{
 		display: none;
 	}
-}
 
-
-@media screen and (max-width: 918px) {
-
-	#contenedor-circ{
-		width: auto;
-	}
-
-	#section_3 #cont-cuadrado{
-		width: auto;
-	}
-
-	#cont-contacto{
-		width: auto;
-	}
-
-	/*CONTACTO*/
-	
-	#contact-der{
-		width: 35%;
-	}
-
-	#contact-der #num-mail
-	{
-		padding: 5px 0 10px 0;
-	}
-
-	#cont-contacto{
-		margin-left: 5px;
-		text-align: left;
-		/*width: 100%;*/
-	}
-
-	#cont-contacto form
-	{
-		font-size: 12px;
-		margin-right: 2%;
-		width: 60%;
-	}
-
-	#section_6 form .cont-btn
-	{
-		/*padding-left: 15%;*/
-		text-align: center;
-		width: 100%;
-	}
-
-
-	#section_6 form input[type="text"]
-	{
-		width: 250px;	
-	}
-
-
-	#section_6 form label
-	{
-		width: 200px;
-	}
-
-}
-
-
-@media screen and (max-width: 900px) {
-	
-	#section_4 #cont-cuadrado{
-		width: auto;
-	}
-
-	#cont-cuadrado  p{
-		width: auto;
-	}
-}
-
-@media screen and (max-width: 895px) {
-
-	#id3{
-		display: block;
-	}
-
-	#contenedor-circ{
-		text-align: center;
-	}
-
-	#section_3 #cont-cuadrado{
-		text-align: center;
-	}
-
-	#section_4 #cont-cuadrado{
-		text-align: center;
-	}
-	
-	#sect1-izq{
-		left: 2%;
-	}
-
-}
-
-
-@media screen and (max-width: 800px) {
-	
 	#cont-contacto form
 	{
 		text-align: center;
 		width: 90%;
 	}
 
+}
+
+
+@media screen and (max-width: 986px) {
+	
 	#contact-der
 	{
 		display: none;
@@ -1399,9 +1538,11 @@ textarea{
 	{
 		display: block;
 		font-size: 14px;
-		height: 180px;
+		height: 140px;
 		vertical-align: top;
 		width: 98%;
+		background: #4D4D4D;
+		margin-bottom: 2em;
 	}
 	
 	#contact-sup #ladoi, #contact-sup #ladod
@@ -1426,8 +1567,9 @@ textarea{
 
 	#contact-sup #num-mail p 
 	{
-		margin: 10px;
-		width: 50%;
+		font-family: gill;
+		margin: 0;
+		/*width: 50%;*/
 	}
 
 	#contact-sup #num-mail p:nth-child(2) 
@@ -1437,36 +1579,38 @@ textarea{
 
 	#contact-sup .contact-soc
 	{
+		color: white;
 		display: inline-block;
+		font-family: gill;
 		text-align: center;
 		vertical-align: top;
 		width: 48%;
 	}
 	
-	#section_6 form .cont-btn
+/*	#contacto form .cont-btn
 	{
 		margin-top: 10px;
 		text-align: center;
 		width: 96%;
 	}
-
-	#section_6 form .cont-btn input[type="submit"]
+	#contacto form .cont-btn input[type="submit"]
 	{
 		margin-left: 75px;
 	}
 
+*/
 
-	#section_6 form 
+	#contacto form 
 	{
 		margin: 0;
 	}	
 
-	#section_6 form label
+	#contacto form label
 	{
 		width: 40%;
 	}
 
-	#section_6 form input[type="text"], #section_6 form input[type="tel"]
+	#contacto form input[type="text"], #contacto form input[type="tel"]
 	{
 		width: 50%;	
 	}
@@ -1480,6 +1624,161 @@ textarea{
 	#sequence-theme{
 		display: none;
 	}
+
+	#cont-check{
+		width: 50%;
+		text-align: left;
+	}
+
+	.check-izq, .check-der{
+		margin-left: 26%;
+	}
+
+	#otros{
+		padding-left: 0;
+	}
+
+	#inicio{
+		padding-bottom: 2.5em;
+	}
+
+	#sect1-izq{
+		margin-top: -1em;
+	}
+
+	#portafolio .h2-sub{
+		margin-bottom: 0.5em;
+	}
+}
+
+
+
+@media screen and (max-width: 918px) {
+
+	#contenedor-circ{
+		width: auto;
+	}
+
+	#portafolio #cont-cuadrado{
+		width: auto;
+	}
+
+	#cont-contacto{
+		width: auto;
+	}
+
+	/*CONTACTO*/
+	
+	#contact-der{
+		width: 35%;
+	}
+
+	#contact-der #num-mail
+	{
+		padding: 5px 0 10px 0;
+	}
+
+	#cont-contacto{
+		margin-left: 5px;
+		text-align: left;
+	}
+
+	#cont-contacto form
+	{
+		font-size: 12px;
+		margin-right: 2%;
+		width: 60%;
+	}
+
+	/*#contacto form .cont-btn
+	{
+		text-align: center;
+		width: 100%;
+	}
+*/
+
+	#contacto form input[type="text"], #contacto form input[type="tel"]
+	{
+		width: 355px;	
+	}
+
+
+	#contacto form label
+	{
+		margin-right: 0;
+		text-align: right;
+		width: 220px;
+	}
+
+	#cont-contacto form{
+		width: 75%;
+		margin: 0 auto;
+	}
+
+	#cont-contacto{
+		text-align: center;
+	}
+
+	.check-der{
+		width: 168px;
+	}
+	
+
+	#cont-check{
+		width: 361px;
+	}
+}
+
+
+@media screen and (max-width: 900px) {
+	
+	#clientes #cont-cuadrado{
+		width: auto;
+	}
+
+	#cont-cuadrado  p{
+		width: auto;
+	}
+}
+
+@media screen and (max-width: 895px) {
+
+	#id3{
+		display: block;
+	}
+
+	#contenedor-circ{
+		text-align: center;
+	}
+
+	#portafolio #cont-cuadrado{
+		text-align: center;
+	}
+
+	#clientes #cont-cuadrado{
+		text-align: center;
+	}
+	
+	/*#sect1-izq{
+		left: 2%;
+	}*/
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+	
+	#cont-contacto form
+	{
+		text-align: center;
+		width: 90%;
+	}
+
+	.h2-sub{
+		margin-top: 0.5em;
+	}
+
 }
 
 @media screen and (max-width: 716px) {
@@ -1497,6 +1796,7 @@ textarea{
 	
 	.art-margen h1{
 		font-size: 28px;
+		padding-top: 1.5em;
 	}
 
 	.art-margen h2{
@@ -1504,14 +1804,36 @@ textarea{
 	}
 
 	.art-margen .abajo{
-		margin-top: 6em;
+		margin: 0 auto;
+		padding-top: 1em;
+		width: 94%;
 	}
 
 	.art-margen{
+		margin: 5em 0;
 		padding-bottom: 2em;
 	}
+	
+	.check-izq, .check-der{
+		margin-left: 23%;
+	}
 
+/*	#contacto form .cont-btn input[type="submit"]{
+		margin-left: 0;
+	}
+*/
+	#contacto form label{
+		text-align: center;
+	}
 
+}
+
+@media screen and (max-width: 682px){
+	#contacto form .pais
+	{
+		margin-left: 0px;
+		width: 100px;
+	}
 }
 
 
@@ -1523,6 +1845,14 @@ textarea{
 
 	.marcos, .marcos2, .marcos3, .marcos4{
 		display: none;
+	}
+
+	.check-izq, .check-der{
+		margin-left: 18%;
+	}
+
+	.h2-sub{
+		margin-top: 0.8em;
 	}
 
 		
@@ -1554,17 +1884,41 @@ textarea{
 
 	#nosotros-izq, #nosotros-der{
 		width: 90%;
+		margin: 0;
 	}
 	
+	.check-izq, .check-der{
+		margin-left: 14%;
+	}
+
 }
 
 @media screen and (max-width: 518px) {
-	#section_4 article{
+	#clientes article{
 		margin: 0 -5px 0 0;
 	}
 
 	#serv-izq-arriba{
 		padding-bottom: 48px;
+	}
+
+	#contact-sup #ladoi, #contact-sup #ladod{
+		display: block;
+	}
+
+	#contact-sup{
+		height: 170px;
+	}
+	
+	#serv-der-arriba, #serv-izq-arriba{
+		padding-bottom: 2em;
+	}
+	
+
+	#serv-der-arriba p, #serv-izq-arriba p{
+		font-weight: bold;
+		position: inherit;
+		text-align: justify;
 	}
 }
 
@@ -1608,18 +1962,21 @@ textarea{
 		width: 100%;
 	}
 
-	#section_6 form label
+	#contacto form label
 	{
 		display: block;
 		text-align: left;
 		width: 100%;
 	}
 	
-	#section_6 form input[type="text"]
+	#contacto form input[type="text"]
 	{
 		width: 100%;	
 	}
-
+	
+	#cont-contacto{
+		text-align: left;
+	}
 
 	#cont-contacto form 
 	{
@@ -1632,19 +1989,80 @@ textarea{
 		margin: 0;
 	}
 
-	#section_6 form input[type="text"], #section_6 form input[type="tel"]{
+	#contacto form input[type="text"], #contacto form input[type="tel"]{
 		width: 100%;
 	}
 
+	.check-izq, .check-der{
+		margin: 0;
+	}
+	
+	#cont-check{
+		width: 100%;
+	}
+
+	.h2-sub{
+		margin-top: 1.5em;
+	}
+
+	#cont-contacto form{
+		width: 90%;
+	}
+
+
 }
+
+
+@media screen and (max-width: 394px) {
+	.check-izq, .check-der{
+		margin-left: 14%;
+	}
+
+	#serv-abajo div{
+		width: 276px;
+	}
+	
+	#portafolio figure{
+		height: 145px;
+		margin: 6px;
+		width: 145px;
+	}
+
+	.mask{
+		display: none;
+	}
+
+}	
+
 
 @media screen and (max-width: 360px) {
 	#serv-izq-arriba{
-		padding-bottom: 62px;
+		padding-bottom: 33px;
 	}
 
 	#serv-abajo #serv-abajo-der figure img{
 		right: 1px;
 	}
 
+}
+
+
+
+iframe{
+	width: 48px;
+	height: 15px;
+}
+
+#body-blog{
+	height: auto;
+	background: none;
+}
+
+#i-blog{
+	font-family: gill;
+	font-size: 12px;
+	text-decoration: none;
+	position: absolute !important;
+	top: 0px !important;
+	color: #4d4d4d;
 }
